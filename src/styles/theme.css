@@ -1,0 +1,20 @@
+:root {
+  --rad-border-radius-smallest: 0.25rem;
+  --rad-border-radius-small: 0.5rem;
+  --rad-border-radius-medium: 1rem;
+  --rad-border-radius-large: 2rem;
+
+  --rad-color-primary: #21ad14;
+  --rad-color-secondary: #70be69;
+  
+  --rad-font-size-smallest: 1rem;
+  --rad-font-size-small: 1.5rem;
+  --rad-font-size-medium: 2rem;
+  --rad-font-size-large: 2.5rem;
+  --rad-font-size-largest: 3rem;
+
+  --rad-gap-smallest: 0.25rem;
+  --rad-gap-small: 0.5rem;
+  --rad-gap-medium: 1rem;
+  --rad-gap-large: 2rem;
+}
