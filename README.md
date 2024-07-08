@@ -1,2 +1,2 @@
 # the_senator_site
-My person website.
+My personal website.
