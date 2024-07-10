@@ -18,3 +18,7 @@
   --rad-gap-medium: 1rem;
   --rad-gap-large: 2rem;
 }
+
+.text_bold {
+  font-weight: bold;
+}
