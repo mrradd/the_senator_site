@@ -1,100 +1,118 @@
-<html>
+<!DOCTYPE html>
 <head>
-  <link rel='stylesheet' type='text/css' href='src/styles/index.css'>
-  <link rel='stylesheet' type='text/css' href='src/styles/theme.css'>
-  <link rel='stylesheet' type='text/css' href='src/styles/main.css'>
-
-  <title>The Senator</title>
+  <link rel="stylesheet" type="text/css" href="src/styles/theme_constants.css">
+  <link rel="stylesheet" type="text/css" href="src/styles/index.css">
+  <link rel="stylesheet" type="text/css" href="src/styles/theme.css">
+  <link rel="stylesheet" type="text/css" href="src/styles/main.css">
+  
+  <title>The Senator - Home</title>
 </head>
 <body>
-  <div class='content'>
-    <div class='top'>
+  <div class="content">
+    <div class="top">
       <h1>The Senator</h1>
-      <h3>Welcome to Here!</h3>
+      <h2>Welcome to Here!</h2>
+      <div class="rad_navi">
+        <div class="rad_button" onclick="rad_button_navigate_onclick('index.html')">Home</div>
+        <div class="rad_button" onclick="rad_button_navigate_onclick('src/pages/about.html')">About</div>
+        <div class="rad_button" onclick="rad_button_navigate_onclick('src/pages/interests.html')">Interests</div>
+        <div class="rad_button" onclick="rad_button_navigate_onclick('src/pages/projects.html')">Projects</div>
+      </div>
+      <img class="hero_image" src="assets/skeleton_small.jpg" alt="A skeleton in a chair.">
+
     </div>
-    
-    <div class='main_content'>
-      <div class='left_side'>
-        <img class='hero_image' src="assets/skeleton_small.jpg" alt="A skeleton in a chair.">
-        <div class='about_container'>
-          <div class='section_title'>
-            <h3>
-              About
-            </h3>
-          </div>
-          <p>
-            Hello! My name is Senator Horton. Yes, Senator is my actual first name. My dad thought it would be funny and help me stand out. Well, it
-            certainly helps with reservations at restaurants and getting reserved parking spaces, so mission accomplished, I guess.
-          </p>
-          <p>
-            This site is a place where I can share my thoughts and ideas with the world, as well as serve as a portfolio of sorts. I'm passionate
-            about music, programming, web development, and game design, so you'll see a lot of that here.
-          </p>
-          <p>
-            Some of my interests include:
-          </p>
-          <div class='section_title'>
-            <h3>
-              Interests
-            </h3>
-          </div>
-          <ul>
-            <li>
-              <span class='text_bold'>Shredding on my guitar</span>: Music is a huge part of my life, and I love expressing myself through my guitar.
-            </li>
-            <li>
-              <span class='text_bold'>DMing D&D games</span>: I've been running the same campaign for my friends for three years now, and it's an amazing creative outlet.
-            </li>
-            <li>
-              <span class='text_bold'>Warhammer 40k</span>: I'm a big fan of this expansive and strategic tabletop game.
-            </li>
-            <li>
-              <span class='text_bold'>Playing and making video games</span>: Video games are both a hobby and a passion of mine, whether I'm playing or creating them.
-            </li>
-            <li>
-              <span class='text_bold'>App development</span>: I enjoy creating useful and innovative applications.
-            </li>
-            <li>
-              <span class='text_bold'>Sating my hunger for knowledge</span>: I'm always eager to learn new things and expand my horizons.
-            </li>
-          </ul>
-          <p>
-            Thanks for visiting my site! I hope you enjoy exploring my projects and thoughts as much as I enjoy sharing them.
-          </p>
+
+    <div class="main_content">
+      <div class="left_side">
+        <div class="section_title">
+          <h3>
+            About
+          </h3>
         </div>
-        <div class='projects_container'>
-          <div class='section_title'>
-            <h3>
-              Projects
-            </h3>
+        <article class="article_container">
+          <div class="article_body">
+            <p>
+              Hello! My name is Senator Horton. Yes, Senator is my actual first name. My dad thought it would be funny and help me stand out. Well, it
+              certainly helps with reservations at restaurants and getting reserved parking spaces, so mission accomplished, I guess.
+            </p>
+            <p>
+              This site is a place where I can share my thoughts and ideas with the world, as well as serve as a portfolio of sorts. I'm passionate
+              about music, programming, web development, and game design, so you'll see a lot of that here.
+            </p>
+            <p>
+              Thanks for visiting my site! I hope you enjoy exploring my projects and thoughts as much as I enjoy sharing them.
+            </p>
           </div>
+        </article>
+        
+        <div class="section_title">
+          <h3>
+            Interests
+          </h3>
+        </div>
+        <article class="article_container">
+          <div class="article_body bullet_list">
+            <ul>
+              <li>
+                <span class="rad_text_bold">Shredding on my guitar</span>: Music is a huge part of my life, and I love expressing myself through my guitar.
+              </li>
+              <li>
+                <span class="rad_text_bold">DMing D&D games</span>: I've been running the same campaign for my friends for three years now, and it's an amazing creative outlet.
+              </li>
+              <li>
+                <span class="rad_text_bold">Warhammer 40k</span>: I'm a big fan of this expansive and strategic tabletop game.
+              </li>
+              <li>
+                <span class="rad_text_bold">Playing and making video games</span>: Video games are both a hobby and a passion of mine, whether I'm playing or creating them.
+              </li>
+              <li>
+                <span class="rad_text_bold">App development</span>: I enjoy creating useful and innovative applications.
+              </li>
+              <li>
+                <span class="rad_text_bold">Sating my hunger for knowledge</span>: I'm always eager to learn new things and expand my horizons.
+              </li>
+            </ul>            
+          </div>
+        </article>
+        
+        <div class="section_title">
+          <h3>
+            Projects
+          </h3>
+        </div>
+        <article class="article_container">
+          <div class="article_body">
             <p>
               Here are some of the projects I am working on or have completed. Click on the project link to go to the project's page.
             </p>
-            <ul>
-              <li>
-                <a href='http://cozziecrumbs.com' target='_blank'>Cozzie Crumbs Bakery</a>: A website developed for my sister's bakery using React.
-              </li>
-              <li>
-                <a href='https://www.newgrounds.com/portal/view/734280' target='_blank'>Missile Commandish</a>: My homage to the classic arcade game
-                Missile Command. Developed with Unity.
-              </li>
-              <li>
-                <a href='https://s3n4taur.itch.io/the-lander' target='_blank'>The Lander</a>: A game where players fly a rocket through cavernous
-                mazes in darkness, with the only light coming from the engines. Created with Unity.
-              </li>
-            </ul>
-        </div>
+            <div class="bullet_list">
+              <ul>
+                <li>
+                  <a class="rad_text_bold" href="http://cozziecrumbs.com" target="_blank">Cozzie Crumbs Bakery</a>: A website developed for my sister's bakery using React.
+                </li>
+                <li>
+                  <a class="rad_text_bold" href="https://www.newgrounds.com/portal/view/734280" target="_blank">Missile Commandish</a>: My homage to the classic arcade game
+                  Missile Command. Developed with Unity.
+                </li>
+                <li>
+                  <a class="rad_text_bold" href="https://s3n4taur.itch.io/the-lander" target="_blank">The Lander</a>: A game where players fly a rocket through cavernous
+                  mazes in darkness, with the only light coming from the engines. Created with Unity.
+                </li>
+              </ul>
+            </div>  
+          </div>
+        </article>
       </div>
-      <!-- <div class='right_side'>
+      <!-- <div class="right_side">
         <p>Right Side</p>
       </div> -->
     </div>
 
-    <div class='footer'>
-      
+    <div class="footer">
+      <p>Powered By The Senator 2024</p>
     </div>
   </div>
-
+  
+  <script src="src/js/index.js"></script>
 </body>
 </html>
