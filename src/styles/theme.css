@@ -1,3 +1,110 @@
+h1 {
+  font-size: var(--rad-font-size-largest);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: var(--rad-font-size-large);
+  font-weight: bold;
+}
+
+h3 {
+  font-size: var(--rad-font-size-medium);
+  font-weight: bold;
+}
+
+h4 {
+  font-size: var(--rad-font-size-small);
+  font-weight: bold;
+}
+
+.content {
+  margin: 1rem;
+  height: 95vh;
+}
+
+.top {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--rad-gap-medium);
+  padding: 1rem;
+}
+
+.main_content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.article_container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: var(--rad-gap-smallest);
+  padding: var(--rad-padding-small);
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.article_body {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--rad-font-size-smallest);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--rad-gap-smallest);
+  padding: 0px var(--rad-padding-small) 0px var(--rad-padding-small);
+}
+
+.page_title {
+  font-size: var(--rad-font-size-largest);
+}
+
+.section_title {
+  font-size: var(--rad-font-size-medium);
+  background-color: var(--rad-color-primary);
+  border-radius: var(--rad-border-radius-smallest);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+div.left_side, div.center_content {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--rad-gap-smallest);
+  height: 75vh;
+}
+
+.right_side {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--rad-gap-smallest);
+  padding: 1rem;
+}
+
+.footer {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
 .rad_text_bold {
   font-weight: bold;
 }
@@ -34,7 +141,7 @@
   background-color: var(--rad-color-button-active); /* Even darker green on click */
 }
 
-/** For testing. */
+/***************** For testing. ****************/
 .rad_test_green {
   outline: #4CAF50 solid 1px;
 }
@@ -54,5 +161,5 @@
 .rad_test_orange {
   outline: orange solid 1px;
 }
-/*****************/
+/***********************************************/
 
