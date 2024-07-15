@@ -18,12 +18,14 @@ h4 {
   font-weight: bold;
 }
 
-.content {
-  margin: 1rem;
-  height: 95vh;
+.rad_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rad-gap-large);
+  overflow-x: hidden;
 }
 
-.top {
+.rad_top {
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -33,33 +35,34 @@ h4 {
   padding: 1rem;
 }
 
-.main_content {
+.rad_main_content {
   display: flex;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  width: 100%;
 }
 
-.article_container {
+.rad_article_container {
   display: flex;
   flex-grow: 1;
   justify-content: flex-start;
   flex-direction: column;
-  gap: var(--rad-gap-smallest);
+  gap: var(--rad-gap-medium);
   padding: var(--rad-padding-small);
   flex-wrap: wrap;
   align-items: flex-start;
+  font-size: var(--rad-font-size-small);
 }
 
 .article_body {
   display: flex;
   flex-direction: column;
-  font-size: var(--rad-font-size-smallest);
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: var(--rad-gap-smallest);
-  padding: 0px var(--rad-padding-small) 0px var(--rad-padding-small);
+  gap: var(--rad-gap-medium);
+  padding: 0 var(--rad-padding-small) 0 var(--rad-padding-small);
 }
 
 .page_title {
@@ -78,17 +81,17 @@ h4 {
   color: white;
 }
 
-div.left_side, div.center_content {
+div.rad_left_side, div.rad_center_content {
   display: flex;
   flex-grow: 1;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   gap: var(--rad-gap-smallest);
-  height: 75vh;
+  width: 100%;
 }
 
-.right_side {
+.rad_right_side {
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -98,11 +101,12 @@ div.left_side, div.center_content {
   padding: 1rem;
 }
 
-.footer {
+.rad_footer {
   display: flex;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
+  font-size: var(--rad-font-size-smallest);
 }
 
 .rad_text_bold {
@@ -112,7 +116,6 @@ div.left_side, div.center_content {
 .rad_button {
   display: inline-block;
   padding: var(--rad-padding-small) var(--rad-padding-small);
-  font-size: 16px;
   color: white;
   background-color: var(--rad-color-primary);
   border: none;
@@ -120,27 +123,17 @@ div.left_side, div.center_content {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .rad_navi {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--rad-gap-medium);
   flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.rad_button:hover {
-  background-color: var(--rad-color-button-hover); /* Darker green on hover */
-}
-
-.rad_button:active {
-  background-color: var(--rad-color-button-active); /* Even darker green on click */
-}
-
 /***************** For testing. ****************/
 .rad_test_green {
   outline: #4CAF50 solid 1px;
