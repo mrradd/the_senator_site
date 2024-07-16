@@ -18,13 +18,6 @@ h4 {
   font-weight: bold;
 }
 
-.rad_content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--rad-gap-large);
-  overflow-x: hidden;
-}
-
 .rad_top {
   display: flex;
   flex-grow: 1;
@@ -33,6 +26,13 @@ h4 {
   flex-direction: column;
   gap: var(--rad-gap-medium);
   padding: 1rem;
+}
+
+.rad_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rad-gap-large);
+  overflow-x: hidden;
 }
 
 .rad_main_content {
@@ -44,61 +44,35 @@ h4 {
   width: 100%;
 }
 
-.rad_article_container {
+.rad_left_side, .rad_right_side {
   display: flex;
   flex-grow: 1;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  gap: var(--rad-gap-small);
+  padding: var(--rad-padding-small);
+}
+
+.rad_center_content {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--rad-gap-small);
+}
+
+.rad_article_container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
   gap: var(--rad-gap-medium);
   padding: var(--rad-padding-small);
   flex-wrap: wrap;
-  align-items: flex-start;
-  font-size: var(--rad-font-size-small);
-}
-
-.article_body {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: var(--rad-gap-medium);
-  padding: 0 var(--rad-padding-small) 0 var(--rad-padding-small);
-}
-
-.page_title {
-  font-size: var(--rad-font-size-largest);
-}
-
-.section_title {
-  font-size: var(--rad-font-size-medium);
-  background-color: var(--rad-color-primary);
-  border-radius: var(--rad-border-radius-smallest);
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  color: white;
-}
-
-div.rad_left_side, div.rad_center_content {
-  display: flex;
-  flex-grow: 1;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  gap: var(--rad-gap-smallest);
-  width: 100%;
-}
-
-.rad_right_side {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: var(--rad-gap-smallest);
-  padding: 1rem;
+  font-size: var(--rad-font-size-smallest);
+  align-content: center;
 }
 
 .rad_footer {
@@ -106,7 +80,7 @@ div.rad_left_side, div.rad_center_content {
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-  font-size: var(--rad-font-size-smallest);
+  font-size: var(--rad-font-size-tiny);
 }
 
 .rad_text_bold {
@@ -133,6 +107,12 @@ div.rad_left_side, div.rad_center_content {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.rad_bullet_list {
+  li {
+    padding: var(--rad-padding-small) 0 var(--rad-padding-small);
+  }
 }
 /***************** For testing. ****************/
 .rad_test_green {
