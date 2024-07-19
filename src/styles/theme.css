@@ -52,6 +52,7 @@ h4 {
   flex-direction: column;
   gap: var(--rad-gap-small);
   padding: var(--rad-padding-small);
+  width: 15%;
 }
 
 .rad_center_content {
@@ -66,13 +67,13 @@ h4 {
 .rad_article_container {
   display: flex;
   justify-content: flex-start;
-  flex-direction: row;
+  flex-direction: column;
   gap: var(--rad-gap-medium);
   padding: var(--rad-padding-small);
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   font-size: var(--rad-font-size-smallest);
-  align-content: center;
+  align-content: flex-start;
 }
 
 .rad_footer {
@@ -88,15 +89,14 @@ h4 {
 }
 
 .rad_button {
-  display: inline-block;
   padding: var(--rad-padding-small) var(--rad-padding-small);
   color: white;
   background-color: var(--rad-color-primary);
   border: none;
   border-radius: var(--rad-border-radius-smallest);
   text-align: center;
-  text-decoration: none;
   cursor: pointer;
+  font-size: var(--rad-font-size-smallest);
 }
 
 .rad_navi {
@@ -114,6 +114,11 @@ h4 {
     padding: var(--rad-padding-small) 0 var(--rad-padding-small);
   }
 }
+
+.rad_code {
+  font-family: "Courier New", Courier, monospace;
+}
+
 /***************** For testing. ****************/
 .rad_test_green {
   outline: #4CAF50 solid 1px;
